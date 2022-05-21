@@ -9,7 +9,7 @@ pipeline {
         docker { image 'maven:3.8.5-openjdk-8-slim' }
     }
             steps {
-                ]sh '''
+                sh '''
                 mvn test
                 '''
             }
@@ -20,7 +20,7 @@ pipeline {
         docker { image 'maven:3.8.5-openjdk-8-slim' }
     }
             steps {
-                ]sh '''
+                sh '''
                 mvn package
                 '''
             }
@@ -31,7 +31,7 @@ pipeline {
         docker { image 'maven:3.8.5-openjdk-8-slim' }
     }
             steps {
-                ]sh '''
+                sh '''
                 mvn clean
                 '''
             }
@@ -42,7 +42,7 @@ pipeline {
         docker { image 'maven:3.8.5-openjdk-8-slim' }
     }
             steps {
-                ]sh '''
+                sh '''
                 mvn compile
                 '''
             }
@@ -53,7 +53,7 @@ pipeline {
         docker { image 'maven:3.8.5-openjdk-8-slim' }
     }
             steps {
-                ]sh '''
+                sh '''
                 mvn verify
                 '''
             }
@@ -68,7 +68,7 @@ pipeline {
         docker { image 'maven:3.8.5-openjdk-8-slim' }
     }
             steps {
-                ]sh '''
+                sh '''
                 mvn validate
                 '''
             }
@@ -80,7 +80,7 @@ pipeline {
         docker { image 'maven:3.8.5-openjdk-8-slim' }
     }
             steps {
-                ]sh '''
+                sh '''
                 mvn install
                 '''
             }
