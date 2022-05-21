@@ -1,5 +1,5 @@
 pipeline {
-   
+    agent any
 
     stages {
 
@@ -80,7 +80,7 @@ pipeline {
         docker { image 'maven:3.8.5-openjdk-8-slim' }
     }
             steps {
-                sh '''
+            sh '''
                 mvn install
                 '''
             }
