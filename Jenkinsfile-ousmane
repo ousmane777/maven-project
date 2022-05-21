@@ -61,6 +61,7 @@ stage('package') {
 
             steps {
                sh '''
+            
               mvn package
               ls -l webapp/target
               pwd
@@ -93,17 +94,15 @@ stage('install') {
             }
         }
        
-stage('build') {
-    agent {
-                 docker { image 'maven:3.8.5-openjdk-8-slim' }
-             }
+stage('build ') {
 
             steps {
                sh '''
-            docker build -t devopseasylearning2021:001 .
+           docker build -t devopseasylearning2021:001 .
                '''
             }
         }
+       
 
 
     }
