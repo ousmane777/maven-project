@@ -12,7 +12,7 @@ pipeline {
 
                             string(
                                 defaultValue: '001', 
-                                name: 'Image-TAG', 
+                                name: 'ImageTAG', 
                                 trim: true
                             )
                         ])
