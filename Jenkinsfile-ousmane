@@ -123,8 +123,10 @@ stage('install') {
                '''
             }
         }
-       
-       stage('SonarQube analysis') {
+
+
+
+stage('SonarQube analysis') {
             agent {
                 docker {
 
@@ -143,7 +145,7 @@ stage('install') {
         }
 
 
-
+       
 stage('build ') {
 
             steps {
@@ -180,4 +182,3 @@ stage('build ') {
 
     }
 }
-    
