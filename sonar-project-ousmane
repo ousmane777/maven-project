@@ -1,5 +1,6 @@
 
-sonar.host.url=http://sonarqube.ektechsoftwaresolution.com/
+
+sonar.host.url=sonarqube.ektechsoftwaresolution.com/
 sonar.projectKey=maven-ousmane
 sonar.projectName=maven-ousmane
 sonar.projectVersion=1.0
