@@ -1,6 +1,6 @@
 sonar.host.url=sonarqube.ektechsoftwaresolution.com/
-sonar.projectKey=maven-ous
-sonar.projectName=maven-ous
+sonar.projectKey=maven-ous-test
+sonar.projectName=maven-ous-tes
 sonar.projectVersion=1.0
 sonar.sources=.
 sonar.language=java
