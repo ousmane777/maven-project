@@ -4,7 +4,7 @@ pipeline {
 
     stages {
         
-       stage('Setup parameters') {
+     
            
 
         stage('clean') {
@@ -96,4 +96,4 @@ stage('install') {
                '''
             }
         }
-
+}
