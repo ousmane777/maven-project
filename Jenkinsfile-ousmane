@@ -1,7 +1,7 @@
 pipeline {
     agent any
    
-
+    stages {
 
         stage('clean') {
             agent {
@@ -10,7 +10,6 @@ pipeline {
 
             steps {
                sh '''
-               rm -rf webapp/target/webapp.war || true
               mvn clean
                '''
             }
@@ -61,9 +60,7 @@ pipeline {
 
             steps {
                sh '''
-            
               mvn package
-              ls -l webapp/target
               pwd
                '''
             }
@@ -93,7 +90,5 @@ pipeline {
                '''
             }
         }
-
-
     }
 }
